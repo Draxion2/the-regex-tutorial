@@ -1,10 +1,13 @@
-# Title (replace with your title)
+# Email Validation Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+Greetings and welcome to my regex (regular expressions) tutorial. Regex is very useful in many coding languages by extracting information from any text or strings. It searches specifically through the string for one or more matches of search patterns.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Today I will be instructing how to break down a regular expression and that one will be a method for code to validate if user input has a valid email address when submitting data via a server (i.e signing up for an application that needs an email).
+
+Matching an Email: 
+```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```
 
 ## Table of Contents
 
