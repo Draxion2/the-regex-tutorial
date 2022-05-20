@@ -6,8 +6,7 @@ Greetings and welcome to my regex (regular expressions) tutorial. Regex is very 
 
 Today I will be instructing how to break down a regular expression and that one will be a method for code to validate if user input has a valid email address when submitting data via a server (i.e signing up for an application that needs an email).
 
-Matching an Email: 
-```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```
+Matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 ## Table of Contents
 
@@ -26,6 +25,17 @@ Matching an Email:
 ## Regex Components
 
 ### Anchors
+
+Regex anchors are `^` & `$`
+
+_Regex Examples_
+* `^email`: matches any string that starts with 'email'<br>
+* `com$`: matches any string that ends with 'com'<br>
+* `emailcom$`: has an exact string match, which starts and ends with 'emailcom'
+
+If we look back at the regex posted above, these anchors are located at the start and end of the regex.
+
+`/^` and `$/` means we are specifically looking for the start and end of a string.
 
 ### Quantifiers
 
