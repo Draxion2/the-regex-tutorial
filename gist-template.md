@@ -29,8 +29,8 @@ Matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 Regex anchors are `^` & `$`
 
 _Regex Examples_
-* `^email`: matches any string that starts with 'email'<br>
-* `com$`: matches any string that ends with 'com'<br>
+* `^email`: matches any string that starts with 'email'
+* `com$`: matches any string that ends with 'com'
 * `emailcom$`: has an exact string match, which starts and ends with 'emailcom'
 
 If we look back at the regex posted above, these anchors are located at the start and end of the regex.
@@ -38,6 +38,22 @@ If we look back at the regex posted above, these anchors are located at the star
 `/^` and `$/` means we are specifically looking for the start and end of a string.
 
 ### Quantifiers
+
+Regex quantifiers are `?`, `{}`, `+`, and `*`
+
+_Regex Examples_
+* `email?`: matches a string that has 'emai' followed by 0 or 1 'email'
+* `email{3}`: matches a string that has 'emai' followed by 3 'l'
+* `email{3,}`: matches a string that has 'emai' followed by 3 or more 'l'
+* `email{3,6}`: matches a string that has 'emai' followed by 3-6 'l'
+* `email*`: matches a string that has 'emai' followed by 0 or more 'l'
+* `email+`: matches a string that has 'emai' followed 1 or more 'l'
+
+Refering back to our regex above, the following part of the syntax has some quantifiers.<br>
+`([a-z0-9_\.-]+)` and `([a-z\.]{2,6})`
+
+The `+` quantifer matches the same string followed by the group (we will learn what this means later in the tutorial).<br>
+The `{2,6}` quantifer matches a string that contains 2-6 characters.
 
 ### OR Operator
 
