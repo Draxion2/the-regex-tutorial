@@ -128,13 +128,16 @@ _Regex Examples_
 * `[e-mE-m]`: this matches a string that is either lowercase e-m and/or uppercase E-M
 
 Returning back to the lengthy regex above, we are presented with 3 bracket expressions.
-`[a-z0-9_\.-]`<br>
+
+- `[a-z0-9_\.-]`<br>
 This group will match a string that contains any character or number, along with any special characters because of the character class `.`<br>
-`[\da-z\.-]`<br>
+- `[\da-z\.-]`<br>
 This group will match any string that contains any character after a digit because of the character class `\d`. It will then match any character after because of the `.`.<br>
-`[a-z\.]`<br>
+- `[a-z\.]`<br>
 This group will match any character, regardless of being a letter, number, or special character
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Thank you so much for reading my tutorial on Regex. My name is Holdan McMullen and I'm on my own personal journey to becoming a full-stack web developer. I began coding front-end about 8 years ago and got ingrigued into learning more. The state of Utah is where I was born and raised and currently live and study to beoming a full-stack developer.
+
+[Github Profile](https://github.com/Draxion2)
