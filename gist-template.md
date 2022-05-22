@@ -11,11 +11,17 @@ Matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 ## Table of Contents
 
 - [Anchors](#anchors)
+
 - [Quantifiers](#quantifiers)
+
 - [OR Operator](#or-operator)
+
 - [Character Classes](#character-classes)
+
 - [Flags](#flags)
+
 - [Grouping and Capturing](#grouping-and-capturing)
+
 - [Bracket Expressions](#bracket-expressions)
 
 ## Regex Components
@@ -46,10 +52,12 @@ _Regex Examples_
 * `email+`: matches a string that has 'emai' followed 1 or more 'l'
 
 Refering back to our regex above, the following part of the syntax has some quantifiers.<br>
+
 `([a-z0-9_\.-]+)` and `([a-z\.]{2,6})`
 
-The `+` quantifer matches the same string followed by the group (we will learn what this means later in the tutorial).<br>
-The `{2,6}` quantifer matches a string that contains 2-6 characters.
+The `+` quantifier matches the same string followed by the group (we will learn what this means later in the tutorial).<br>
+
+The `{2,6}` quantifier matches a string that contains 2-6 characters.
 
 ### OR Operator
 
@@ -75,6 +83,7 @@ _Regex Examples_
 * `.`: matches any character
 
 These perform inverse matches<br>
+
 _Negeted Character Classes_
 * `\S`: matches a non-whitespace character
 * `\D`: matches a single non-digit character
@@ -85,7 +94,7 @@ It should be noted, however, when using the `.` operator to tread carefully caus
 Lets print the regex at the top of the page down here and take a closer look at it.<br>
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-As you can see the character classes that exist in this regex are `\d` and `.`. When studying their locations, it can be seen that the sequence is looking for any character that matches a digit followed by any character that is between 'a' and 'z'. The `.` matches any character, regardless of wether its a letter, number, or even a special character.
+As you can see the character classes that exist in this regex are `\d` and `.`. When studying their locations, it can be seen that the sequence is looking for any character that matches a digit followed by any character that is between 'a' and 'z'. The `.` matches any character, regardless of whether it's a letter, number, or even a special character.
 
 ### Flags
 
@@ -94,7 +103,7 @@ Regex flags are `//`, `/g`, `/i`, `/m`
 _Regex Example_
 * `/email/`: means the search happens in between the `/`
 * `/email/g`: 'g' means 'global', which does not return the first match
-* `/email/m`: 'm' means 'multi-line', which will start and end on a line not the whole string
+* `/email/m`: 'm' means 'multi-line', which will start and end on a line, not the whole string
 * `/eMaIl/i`: 'i' means 'insensitive'. It makes the entire expression case-insensitive. This example would match `EmAiL`
 
 Even though the email regex doesn't present any of the `/g`, `/i`, and `/m` flags, it does present `/` at the start and finish, which means it will search everything in between. Typically every regex has this important concept.
@@ -106,9 +115,10 @@ Regex grouping and capturing are `()`
 _Regex Examples_
 * `e(mail)`: the parentheses present a capturing group with the value 'mail'
 * `e(?:mail)`: when using the `?:` it disables the capturing group
-* `e(?<custom_name>mail)`: when using `?<custom_name>` it allows us to put a name to the group. 'custom_name' can be anything you it to be
+* `e(?<custom_name>mail)`: when using `?<custom_name>` it allows us to put a name to the group. 'custom_name' can be anything
 
 In the email regex at the top of the page, we are presented with 3 capturing groups.
+
 * `([a-z0-9_\.-]+)`
 * `([\da-z\.-]+)`
 * `([a-z\.]{2,6})`
@@ -127,14 +137,14 @@ _Regex Examples_
 Returning back to the lengthy regex above, we are presented with 3 bracket expressions.
 
 - `[a-z0-9_\.-]`<br>
-This group will match a string that contains any character or number, along with any special characters because of the character class `.`<br>
+This group will match a string that contains any character or number, along with any special characters because of the character class `.`
 - `[\da-z\.-]`<br>
-This group will match any string that contains any character after a digit because of the character class `\d`. It will then match any character after because of the `.`.<br>
+This group will match any string that contains any character after a digit because of the character class `\d`. It will then match any character after because of the `.`
 - `[a-z\.]`<br>
 This group will match any character, regardless of being a letter, number, or special character
 
 ## Author
 
-Thank you so much for reading my tutorial on Regex. My name is Holdan McMullen and I'm on my own personal journey to becoming a full-stack web developer. I began coding front-end about 8 years ago and got ingrigued into learning more. The state of Utah is where I was born and raised and currently live and study to beoming a full-stack developer.
+Thank you so much for reading my tutorial on Regex. My name is Holdan McMullen and I'm on my own personal journey to becoming a full-stack web developer. I began coding front-end about 8 years ago and got intrigued by learning more. The state of Utah is where I was born and raised and currently live and studying to become a full-stack developer.
 
 [Github Profile](https://github.com/Draxion2)
