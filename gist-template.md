@@ -57,6 +57,17 @@ The `{2,6}` quantifer matches a string that contains 2-6 characters.
 
 ### OR Operator
 
+Regex OR operators are `|` and `[]`
+
+_Regex Examples_
+* `ema(i|l)`: matches a string that has 'ema' followed by 'i' or 'l' (also captures 'i' or 'l')
+* `ema[il]`: same as above, except 'i' and 'l' isn't captured
+
+In the email regex above, there are OR operators present such as<br>
+`[a-z0-9_\.-]` or `[\da-z\.-]`
+
+Like in the regex examples mentioned earlier, the `[]` operator doesn't capture what is between the square brackets. Therefore when using this regex sequence, nothing is captured.
+
 ### Character Classes
 
 ### Flags
