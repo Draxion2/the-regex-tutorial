@@ -121,6 +121,19 @@ This is extremely useful when needing to take information for strings and/or dat
 
 ### Bracket Expressions
 
+Regex bracket expressions are `[]`
+
+_Regex Examples_
+* `[email]`: this matches a string which has either 'e', 'm', 'a', 'i', or 'l'. This sequence is equal to `e|m|a|i|l` or `[e-m]`
+* `[0-9]`: matches a string that has between 0 and 9
+* `[e-mE-m]`: this matches a string that is either lowercase e-m and/or uppercase E-M
+
+Returning back to the lengthy regex above, we are presented with 3 bracket expressions.
+`[a-z0-9_\.-]`<br>
+This group will match a string that contains any character or number, along with any special characters because of the character class `.`<br>
+`[\da-z\.-]`<br>
+This group will match any string that contains any character after a digit because of the character class `\d`. It will then match any character after because of the `.`.
+
 ### Greedy and Lazy Match
 
 ### Boundaries
