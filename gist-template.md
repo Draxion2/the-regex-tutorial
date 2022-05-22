@@ -70,6 +70,27 @@ Like in the regex examples mentioned earlier, the `[]` operator doesn't capture 
 
 ### Character Classes
 
+Regex classes are `\s`, `\d`, `\w`, and `.`
+
+_Regex Examples_
+* `\s`: matches a whitespace character
+* `\d`: matches any character that is a digit
+* `\w`: matches any word character, including underscores
+* `.`: matches any character
+
+These perform inverse matches<br>
+_Negeted Character Classes_
+* `\S`: matches a non-whitespace character
+* `\D`: matches a single non-digit character
+* `\W`: matches any non-word character
+
+It should be noted, however, when using the `.` operator to tread carefully cause often character classes or negated character classes are faster.
+
+Lets print the regex at the top of the page down here and take a closer look at it.<br>
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+As you can see the character classes that exist in this regex are `\d` and `.`. When studying their locations, it can be seen that the sequence is looking for any character that matches a digit followed by any character that is between 'a' and 'z'. The `.` matches any character, regardless of wether its a letter, number, or even a special character.
+
 ### Flags
 
 ### Grouping and Capturing
