@@ -17,7 +17,6 @@ Matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
@@ -135,8 +134,6 @@ This group will match a string that contains any character or number, along with
 This group will match any string that contains any character after a digit because of the character class `\d`. It will then match any character after because of the `.`.<br>
 `[a-z\.]`<br>
 This group will match any character, regardless of being a letter, number, or special character
-
-### Greedy and Lazy Match
 
 ### Boundaries
 
