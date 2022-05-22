@@ -105,6 +105,20 @@ Even though the email regex doesn't present any of the `/g`, `/i`, and `/m` flag
 
 ### Grouping and Capturing
 
+Regex grouping and capturing are `()`
+
+_Regex Examples_
+* `e(mail)`: the parentheses present a capturing group with the value 'mail'
+* `e(?:mail)`: when using the `?:` it disables the capturing group
+* `e(?<custom_name>mail)`: when using `?<custom_name>` it allows us to put a name to the group. 'custom_name' can be anything you it to be
+
+In the email regex at the top of the page, we are presented with 3 capturing groups.
+* `([a-z0-9_\.-]+)`
+* `([\da-z\.-]+)`
+* `([a-z\.]{2,6})`
+
+This is extremely useful when needing to take information for strings and/or data using a preferred programming language.
+
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
