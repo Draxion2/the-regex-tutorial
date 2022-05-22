@@ -93,6 +93,16 @@ As you can see the character classes that exist in this regex are `\d` and `.`. 
 
 ### Flags
 
+Regex flags are `//`, `/g`, `/i`, `/m`
+
+_Regex Example_
+* `/email/`: means the search happens in between the `/`
+* `/email/g`: 'g' means 'global', which does not return the first match
+* `/email/m`: 'm' means 'multi-line', which will start and end on a line not the whole string
+* `/eMaIl/i`: 'i' means 'insensitive'. It makes the entire expression case-insensitive. This example would match `EmAiL`
+
+Even though the email regex doesn't present any of the `/g`, `/i`, and `/m` flags, it does present `/` at the start and finish, which means it will search everything in between. Typically every regex has this important concept.
+
 ### Grouping and Capturing
 
 ### Bracket Expressions
