@@ -132,7 +132,9 @@ Returning back to the lengthy regex above, we are presented with 3 bracket expre
 `[a-z0-9_\.-]`<br>
 This group will match a string that contains any character or number, along with any special characters because of the character class `.`<br>
 `[\da-z\.-]`<br>
-This group will match any string that contains any character after a digit because of the character class `\d`. It will then match any character after because of the `.`.
+This group will match any string that contains any character after a digit because of the character class `\d`. It will then match any character after because of the `.`.<br>
+`[a-z\.]`<br>
+This group will match any character, regardless of being a letter, number, or special character
 
 ### Greedy and Lazy Match
 
