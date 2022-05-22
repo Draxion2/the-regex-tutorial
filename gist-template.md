@@ -135,12 +135,6 @@ This group will match any string that contains any character after a digit becau
 `[a-z\.]`<br>
 This group will match any character, regardless of being a letter, number, or special character
 
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
-
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
